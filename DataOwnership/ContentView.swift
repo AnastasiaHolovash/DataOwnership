@@ -8,15 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                NavigationLink("State Value Type") {
+                    StateValueType()
+                }
+                NavigationLink("State Reference Type") {
+                    StateReferenceType()
+                }
+                NavigationLink("Binding") {
+                    SampleBinding()
+                }
+                NavigationLink("Observable Object") {
+                    ObservableObjectView()
+                }
+                NavigationLink("Environment Object") {
+                    EnvironmentObjectView()
+                }
+            }
+            .navigationTitle("Data ownership")
         }
-        .padding()
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
