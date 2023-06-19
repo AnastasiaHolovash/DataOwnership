@@ -7,13 +7,26 @@
 
 import SwiftUI
 
+final class EnvironmentObjectViewModel: ObservableObject {
+    @Published var count = 0
+    @Published var toggleValue = false
+
+    func incrementCounter() {
+        count += 1
+    }
+}
+
 struct EnvironmentObjectView: View {
-    @StateObject var viewModel = CounterViewModel()
+    @StateObject var viewModel = EnvironmentObjectViewModel()
 
     var body: some View {
         VStack(spacing: 32) {
             EnvironmentObjectChildView1(viewModel: viewModel)
+
             EnvironmentObjectChildView2()
+
+            Toggle("Toggle", isOn: $viewModel.toggleValue)
+                .padding(.horizontal, 120)
         }
         .padding(.vertical, 100)
         .environmentObject(viewModel)
@@ -22,7 +35,7 @@ struct EnvironmentObjectView: View {
 }
 
 struct EnvironmentObjectChildView1: View {
-    @ObservedObject var viewModel: CounterViewModel
+    @ObservedObject var viewModel: EnvironmentObjectViewModel
 
     var body: some View {
         let _ = Self._printChanges()
@@ -38,7 +51,7 @@ struct EnvironmentObjectChildView1: View {
 }
 
 struct EnvironmentObjectChildView2: View {
-    @EnvironmentObject var viewModel: CounterViewModel
+    @EnvironmentObject var viewModel: EnvironmentObjectViewModel
 
     var body: some View {
         let _ = Self._printChanges()

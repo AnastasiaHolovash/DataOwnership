@@ -16,6 +16,10 @@
 		5D56AA632A3E3EB500B7A60B /* StateReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56AA622A3E3EB500B7A60B /* StateReferenceType.swift */; };
 		5D56AA652A3E42C300B7A60B /* ObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56AA642A3E42C300B7A60B /* ObservedObject.swift */; };
 		5D56AA672A3E4D9700B7A60B /* EnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56AA662A3E4D9700B7A60B /* EnvironmentObject.swift */; };
+		5D7152F52A3F4D2100E03597 /* NewStateValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7152F42A3F4D2100E03597 /* NewStateValueType.swift */; };
+		5D7152F72A3F4D8200E03597 /* NewStateReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7152F62A3F4D8200E03597 /* NewStateReferenceType.swift */; };
+		5D7152F92A3F4E5A00E03597 /* NewSampleBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7152F82A3F4E5A00E03597 /* NewSampleBinding.swift */; };
+		5D7152FD2A3F53BC00E03597 /* NewObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7152FC2A3F53BC00E03597 /* NewObservation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		5D56AA622A3E3EB500B7A60B /* StateReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateReferenceType.swift; sourceTree = "<group>"; };
 		5D56AA642A3E42C300B7A60B /* ObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObject.swift; sourceTree = "<group>"; };
 		5D56AA662A3E4D9700B7A60B /* EnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObject.swift; sourceTree = "<group>"; };
+		5D7152F42A3F4D2100E03597 /* NewStateValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStateValueType.swift; sourceTree = "<group>"; };
+		5D7152F62A3F4D8200E03597 /* NewStateReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStateReferenceType.swift; sourceTree = "<group>"; };
+		5D7152F82A3F4E5A00E03597 /* NewSampleBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSampleBinding.swift; sourceTree = "<group>"; };
+		5D7152FC2A3F53BC00E03597 /* NewObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewObservation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +71,8 @@
 			children = (
 				5D56AA502A3E379400B7A60B /* DataOwnershipApp.swift */,
 				5D56AA522A3E379400B7A60B /* ContentView.swift */,
-				5D56AA5E2A3E390F00B7A60B /* StateValueType.swift */,
-				5D56AA622A3E3EB500B7A60B /* StateReferenceType.swift */,
-				5D56AA602A3E3A7700B7A60B /* SampleBinding.swift */,
-				5D56AA642A3E42C300B7A60B /* ObservedObject.swift */,
-				5D56AA662A3E4D9700B7A60B /* EnvironmentObject.swift */,
+				5D7152F22A3F4BE000E03597 /* iOS_14 */,
+				5D7152F32A3F4C0000E03597 /* iOS_17 */,
 				5D56AA542A3E379500B7A60B /* Assets.xcassets */,
 				5D56AA562A3E379500B7A60B /* Preview Content */,
 			);
@@ -80,6 +85,29 @@
 				5D56AA572A3E379500B7A60B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D7152F22A3F4BE000E03597 /* iOS_14 */ = {
+			isa = PBXGroup;
+			children = (
+				5D56AA5E2A3E390F00B7A60B /* StateValueType.swift */,
+				5D56AA622A3E3EB500B7A60B /* StateReferenceType.swift */,
+				5D56AA602A3E3A7700B7A60B /* SampleBinding.swift */,
+				5D56AA642A3E42C300B7A60B /* ObservedObject.swift */,
+				5D56AA662A3E4D9700B7A60B /* EnvironmentObject.swift */,
+			);
+			path = iOS_14;
+			sourceTree = "<group>";
+		};
+		5D7152F32A3F4C0000E03597 /* iOS_17 */ = {
+			isa = PBXGroup;
+			children = (
+				5D7152F42A3F4D2100E03597 /* NewStateValueType.swift */,
+				5D7152F62A3F4D8200E03597 /* NewStateReferenceType.swift */,
+				5D7152F82A3F4E5A00E03597 /* NewSampleBinding.swift */,
+				5D7152FC2A3F53BC00E03597 /* NewObservation.swift */,
+			);
+			path = iOS_17;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +183,12 @@
 				5D56AA612A3E3A7700B7A60B /* SampleBinding.swift in Sources */,
 				5D56AA652A3E42C300B7A60B /* ObservedObject.swift in Sources */,
 				5D56AA532A3E379400B7A60B /* ContentView.swift in Sources */,
+				5D7152FD2A3F53BC00E03597 /* NewObservation.swift in Sources */,
 				5D56AA512A3E379400B7A60B /* DataOwnershipApp.swift in Sources */,
+				5D7152F92A3F4E5A00E03597 /* NewSampleBinding.swift in Sources */,
+				5D7152F72A3F4D8200E03597 /* NewStateReferenceType.swift in Sources */,
 				5D56AA5F2A3E390F00B7A60B /* StateValueType.swift in Sources */,
+				5D7152F52A3F4D2100E03597 /* NewStateValueType.swift in Sources */,
 				5D56AA632A3E3EB500B7A60B /* StateReferenceType.swift in Sources */,
 				5D56AA672A3E4D9700B7A60B /* EnvironmentObject.swift in Sources */,
 			);
@@ -215,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -269,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

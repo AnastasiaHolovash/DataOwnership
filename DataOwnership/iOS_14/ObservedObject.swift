@@ -15,10 +15,8 @@ struct ObservableObjectView: View {
             ObservedObjectChildView()
             StateObjectChildView()
 
-            Text("Toggle: \(toggle.description)" ).font(.title)
-            Button("Toggle") {
-                toggle.toggle()
-            }
+            Toggle("Toggle", isOn: $toggle)
+                .padding(.horizontal, 120)
         }
         .padding(.vertical, 100)
         .navigationTitle("Observed & State Object")
